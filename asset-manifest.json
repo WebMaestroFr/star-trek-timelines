@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/star-trek-timelines/static/css/main.036c042e.chunk.css",
-    "main.js": "/star-trek-timelines/static/js/main.98aef5c1.chunk.js",
-    "main.js.map": "/star-trek-timelines/static/js/main.98aef5c1.chunk.js.map",
+    "main.js": "/star-trek-timelines/static/js/main.d7bc68f3.chunk.js",
+    "main.js.map": "/star-trek-timelines/static/js/main.d7bc68f3.chunk.js.map",
     "runtime-main.js": "/star-trek-timelines/static/js/runtime-main.059ccc3b.js",
     "runtime-main.js.map": "/star-trek-timelines/static/js/runtime-main.059ccc3b.js.map",
     "static/js/2.907bd303.chunk.js": "/star-trek-timelines/static/js/2.907bd303.chunk.js",
     "static/js/2.907bd303.chunk.js.map": "/star-trek-timelines/static/js/2.907bd303.chunk.js.map",
     "index.html": "/star-trek-timelines/index.html",
-    "precache-manifest.efa733580623a3e8187e9ac73206181d.js": "/star-trek-timelines/precache-manifest.efa733580623a3e8187e9ac73206181d.js",
+    "precache-manifest.488a79bb50a90a0fab36966834c3baba.js": "/star-trek-timelines/precache-manifest.488a79bb50a90a0fab36966834c3baba.js",
     "service-worker.js": "/star-trek-timelines/service-worker.js",
     "static/css/main.036c042e.chunk.css.map": "/star-trek-timelines/static/css/main.036c042e.chunk.css.map",
     "static/js/2.907bd303.chunk.js.LICENSE.txt": "/star-trek-timelines/static/js/2.907bd303.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.059ccc3b.js",
     "static/js/2.907bd303.chunk.js",
     "static/css/main.036c042e.chunk.css",
-    "static/js/main.98aef5c1.chunk.js"
+    "static/js/main.d7bc68f3.chunk.js"
   ]
 }
