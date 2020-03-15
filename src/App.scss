@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Jura&display=swap");
+@import "./config/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.close {
+  color: $link-color;
+  text-shadow: none;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.form-control {
+  font-family: monospace;
+}
+
+.Icon.inactive {
+  opacity: 0.33;
+}
+
+.Crew {
+  margin-bottom: $spacer * 2;
+  min-height: 500px;
+
+  .card-body {
+    display: flex;
+    flex-flow: column nowrap;
+    .card-text {
+      margin-top: auto;
+    }
+  }
+
+  .card-img-top {
+    background: $dark;
+  }
+
+  .CrewLevel {
+    margin: 0.25em 0;
+    height: 0.25em;
+  }
+
+  &.active {
+    .Skill-active {
+      height: $progress-height / 2;
+      margin-bottom: 0;
+      + .progress {
+        height: $progress-height / 2;
+      }
+    }
+  }
+  &.inactive {
+    opacity: 0.67;
+  }
+  &.rarity-1 {
+    .CrewLevel .progress-bar {
+      background-color: $gray-600;
+    }
+    .card-img-top {
+      background: radial-gradient(circle, $gray-600 0%, $dark 100%);
+    }
+  }
+  &.rarity-2 {
+    .CrewLevel .progress-bar {
+      background-color: $green;
+    }
+    .card-img-top {
+      background: radial-gradient(circle, $green 0%, $dark 100%);
+    }
+  }
+  &.rarity-3 {
+    .CrewLevel .progress-bar {
+      background-color: $blue;
+    }
+    .card-img-top {
+      background: radial-gradient(circle, $blue 0%, $dark 100%);
+    }
+  }
+  &.rarity-4 {
+    .CrewLevel .progress-bar {
+      background-color: $purple;
+    }
+    .card-img-top {
+      background: radial-gradient(circle, $purple 0%, $dark 100%);
+    }
+  }
+  &.rarity-5 {
+    .CrewLevel .progress-bar {
+      background-color: $yellow;
+    }
+    .card-img-top {
+      background: radial-gradient(circle, $yellow 0%, $dark 100%);
+    }
+  }
+}
+
+.Navigation {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: $spacer;
+  margin-bottom: 1.5 * $spacer;
+  .navbar-brand {
+    margin-right: 0;
+  }
+}
+
+.Player-modal {
+  background-color: $body-bg;
+  .Player-label {
+    font-size: x-large;
+    line-height: 1;
+  }
+}
+
+.Skill {
+  .Skill-label {
+    display: flex;
+    justify-content: space-between;
+  }
+  .progress {
+    margin-bottom: 0.33rem;
+  }
+}
