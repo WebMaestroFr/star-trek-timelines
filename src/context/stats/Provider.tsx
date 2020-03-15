@@ -19,21 +19,27 @@ const isBetterSkill = (
 const getBestCrew = (best: SkillsCrew, crew: DataCrew) =>
   Object.keys(crew.max_skills).reduce((b, s) => {
     const bestCrew = (best as any)[s];
-    const bestSkill = bestCrew && (bestCrew.max_skills as any)[s];
-    const skill = (crew.max_skills as any)[s];
+    const bestSkill = bestCrew && bestCrew.max_skills[s];
+    const skill = (crew.max_skills as any)[s] as Skill | undefined;
     return isBetterSkill(bestSkill, skill) ? { ...b, [s]: crew } : b;
   }, best) as SkillsCrew;
 
 const getPlayerBestCrew = (best: SkillsPlayerCrew, crew: PlayerCrew) =>
   Object.keys(crew.base_skills).reduce((b, s) => {
     const bestCrew = (best as any)[s];
-    const bestSkill = bestCrew && (bestCrew.base_skills as any)[s];
-    const skill = (crew.base_skills as any)[s];
+    const bestSkill = bestCrew && bestCrew.base_skills[s];
+    const skill = (crew.base_skills as any)[s] as Skill | undefined;
     return isBetterSkill(bestSkill, skill) ? { ...b, [s]: crew } : b;
   }, best) as SkillsPlayerCrew;
 
-const getSkillAvg = (skill: Skill) =>
-  skill.core + (skill.range_max + skill.range_min) / 2;
+const getSkillAvg = (skill: Skill | undefined) =>
+  skill && skill.core + (skill.range_max + skill.range_min) / 2;
+
+const getSkillsSum = (skills: Skills) =>
+  Object.values(skills).reduce<number>((sum: number, skill: Skill) => {
+    const avg = getSkillAvg(skill);
+    return avg ? sum + avg : 0;
+  }, 0);
 
 const StatsProvider: FC = ({ children }) => {
   const PLAYER = usePlayer();
@@ -60,19 +66,19 @@ const StatsProvider: FC = ({ children }) => {
       if (skill === undefined) {
         return diffSkills;
       }
-      const bestSkill =
-        (bestSkills as any)[skillName] || (bestSkills as any)[skillName];
+      const bestSkill = (bestSkills as any)[skillName] as Skill | undefined;
       const bestSkillAvg = getSkillAvg(bestSkill);
-      const playerBestSkill =
-        (playerBestSkills as any)[skillName] ||
-        (playerBestSkills as any)[skillName];
-      const playerBestSkillAvg =
-        playerBestSkill.core + getSkillAvg(playerBestSkill);
+      const playerBestSkill = (playerBestSkills as any)[skillName] as
+        | Skill
+        | undefined;
+      const playerBestSkillAvg = getSkillAvg(playerBestSkill);
       const skillAvg = getSkillAvg(skill);
-      return {
-        ...diffSkills,
-        [skillName]: 1 + (playerBestSkillAvg - skillAvg) / bestSkillAvg
-      };
+      return playerBestSkillAvg && skillAvg && bestSkillAvg
+        ? {
+            ...diffSkills,
+            [skillName]: 1 + (playerBestSkillAvg - skillAvg) / bestSkillAvg
+          }
+        : diffSkills;
     };
     setStats({
       bestCrew,
@@ -91,15 +97,8 @@ const StatsProvider: FC = ({ children }) => {
               ({ name }) => sanitizeFilename(name) === crew.key
             )
           : null;
-        const currentSkillsSum = active
-          ? Object.values(active.base_skills).reduce<number>(
-              (sum: number, skill: Skill) => sum + getSkillAvg(skill),
-              0
-            )
-          : 0;
-        const maxSkillsSum = Object.values(crew.max_skills as Skills).reduce<
-          number
-        >((sum: number, skill: Skill) => sum + getSkillAvg(skill), 0);
+        const currentSkillsSum = active ? getSkillsSum(active.base_skills) : 0;
+        const maxSkillsSum = getSkillsSum(crew.max_skills);
         const skillsProgress = currentSkillsSum
           ? Math.min(currentSkillsSum / maxSkillsSum, 1)
           : 0;

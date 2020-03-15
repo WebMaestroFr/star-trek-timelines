@@ -8,9 +8,11 @@ export const optionsArray = (options: HTMLOptionsCollection) =>
     (option: HTMLOptionElement) => option.selected
   );
 
-export const sanitizeFilename = (filename: string) =>
+export const sanitizeFilename = (filename?: string) =>
   filename
-    .toLowerCase()
-    .replace(/[^a-z0-9]/gi, "-")
-    .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "");
+    ? filename
+        .toLowerCase()
+        .replace(/[^a-z0-9]/gi, "-")
+        .replace(/-+/g, "-")
+        .replace(/^-|-$/g, "")
+    : "";

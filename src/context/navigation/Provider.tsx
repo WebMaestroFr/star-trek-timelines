@@ -1,4 +1,4 @@
-import React, { FC, FormEvent, MouseEvent, useState } from "react";
+import React, { ChangeEvent, FC, MouseEvent, useState } from "react";
 import { Button, Form, Navbar } from "react-bootstrap";
 
 import FormDebounce from "../../components/Form/Debounce";
@@ -13,8 +13,12 @@ const NavigationProvider: FC<{
   playerName: string | null;
 }> = ({ children, onClickImport, playerName }) => {
   const [filter, setFilter] = useState<string>(defaultNavigation.filter);
-  const handleChangeFilter = (event: FormEvent<HTMLInputElement>) => {
-    const sanitizedValue = sanitizeFilename(event.currentTarget.value).replace(
+  const handleChangeFilter = (
+    event: ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ) => {
+    const sanitizedValue = sanitizeFilename(event.target.value).replace(
       "-",
       ""
     );

@@ -16,7 +16,7 @@ const Crew: FC<{ crew: StatsCrew }> = ({ crew: { active, ...crew } }) => {
       })}
     >
       <LazyLoad height={500} offset={750}>
-        <Card.Img variant="top" src={`/crew/${crew.key}.png`} />
+        <Card.Img variant="top" src={`./crew/${crew.key}.png`} />
         <Card.Body>
           <CrewRarity
             maxRarity={crew.max_rarity}

@@ -7,6 +7,7 @@ type FormControlChangeEvent = ChangeEvent<
 
 const FormDebounce: FC<FormControlProps & {
   delay?: number;
+  onChange?: (event: FormControlChangeEvent) => void;
   placeholder?: string;
 }> = ({ delay = 400, onChange, ...props }) => {
   const [changeEvent, setChangeEvent] = useState<FormControlChangeEvent>();
@@ -16,8 +17,11 @@ const FormDebounce: FC<FormControlProps & {
       const timeoutID = setTimeout(timeoutCallback, delay);
       return () => clearTimeout(timeoutID);
     }
-  }, [onChange, changeEvent]);
-  const handleChange = (event: FormControlChangeEvent) => setChangeEvent(event);
+  }, [delay, onChange, changeEvent]);
+  const handleChange = (event: FormControlChangeEvent) => {
+    event.persist();
+    setChangeEvent(event);
+  };
   return <FormControl onChange={handleChange} {...props} />;
 };
 

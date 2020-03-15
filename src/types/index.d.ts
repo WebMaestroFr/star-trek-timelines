@@ -25,7 +25,7 @@ interface Skill {
 }
 
 interface Skills {
-  [name: SkillName]: Skill;
+  [name: SkillName]: Skill | undefined;
 }
 
 interface Crew {
