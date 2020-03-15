@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/star-trek-timelines/precache-manifest.ab3c587ebf0072d05a1dfb4e580c699b.js"
+  "/star-trek-timelines/precache-manifest.efa733580623a3e8187e9ac73206181d.js"
 );
 
 self.addEventListener('message', (event) => {
