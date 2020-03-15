@@ -15,7 +15,6 @@ export const ajv = new Ajv({
 
 ajv.addMetaSchema(require("ajv/lib/refs/json-schema-draft-06.json"));
 
-export { PlayerJSON };
 export const PlayerJSONSchema = {
   $schema: "http://json-schema.org/draft-07/schema#",
   defaultProperties: [],
@@ -63,7 +62,7 @@ export type ValidateFunction<T> = ((data: unknown) => data is T) &
   Pick<Ajv.ValidateFunction, "errors">;
 export const isPlayerJSON = ajv.compile(PlayerJSONSchema) as ValidateFunction<
   PlayerJSON
->;
+  >;
 export default function validate(value: unknown): PlayerJSON {
   if (isPlayerJSON(value)) {
     return value;
@@ -73,8 +72,8 @@ export default function validate(value: unknown): PlayerJSON {
         isPlayerJSON.errors!.filter((e: any) => e.keyword !== "if"),
         { dataVar: "PlayerJSON" }
       ) +
-        "\n\n" +
-        inspect(value)
+      "\n\n" +
+      inspect(value)
     );
   }
 }

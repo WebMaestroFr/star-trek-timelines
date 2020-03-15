@@ -16,7 +16,7 @@ const AppCrew: FC = () => {
   return (
     <Row>
       {dataCrew
-        .filter(crew => crew.key.replace("-", "").includes(NAVIGATION.filter))
+        .filter(crew => crew.key.replace(/-/g, "").includes(NAVIGATION.filter))
         .map(crew => (
           <Col key={crew.key} sm={6} md={4} lg={3}>
             <CrewCard crew={crew} />

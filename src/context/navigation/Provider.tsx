@@ -19,7 +19,7 @@ const NavigationProvider: FC<{
     >
   ) => {
     const sanitizedValue = sanitizeFilename(event.target.value).replace(
-      "-",
+      /-/g,
       ""
     );
     setFilter(sanitizedValue);
