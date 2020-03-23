@@ -18772,5 +18772,187 @@
     },
     "name": "Riker Odan",
     "url": "/wiki/Riker_Odan"
+  },
+  {
+    "image": "crew/admiral-patrick.png",
+    "key": "admiral-patrick",
+    "max_rarity": 5,
+    "max_skills": {
+      "command_skill": {
+        "core": 1238,
+        "range_max": 538,
+        "range_min": 273
+      },
+      "diplomacy_skill": {
+        "core": 495,
+        "range_max": 143,
+        "range_min": 76
+      },
+      "science_skill": {
+        "core": 1023,
+        "range_max": 239,
+        "range_min": 124
+      }
+    },
+    "name": "Admiral Patrick",
+    "url": "/wiki/Admiral_Patrick"
+  },
+  {
+    "image": "crew/claymore-scotty.png",
+    "key": "claymore-scotty",
+    "max_rarity": 5,
+    "max_skills": {
+      "diplomacy_skill": {
+        "core": 516,
+        "range_max": 136,
+        "range_min": 72
+      },
+      "engineering_skill": {
+        "core": 1307,
+        "range_max": 387,
+        "range_min": 195
+      },
+      "security_skill": {
+        "core": 1006,
+        "range_max": 234,
+        "range_min": 106
+      }
+    },
+    "name": "Claymore Scotty",
+    "url": "/wiki/Claymore_Scotty"
+  },
+  {
+    "image": "crew/control-leland.png",
+    "key": "control-leland",
+    "max_rarity": 5,
+    "max_skills": {
+      "command_skill": {
+        "core": 1254,
+        "range_max": 394,
+        "range_min": 233
+      },
+      "diplomacy_skill": {
+        "core": 658,
+        "range_max": 86,
+        "range_min": 49
+      },
+      "security_skill": {
+        "core": 1067,
+        "range_max": 198,
+        "range_min": 103
+      }
+    },
+    "name": "Control Leland",
+    "url": "/wiki/Control_Leland"
+  },
+  {
+    "image": "crew/leucon.png",
+    "key": "leucon",
+    "max_rarity": 5,
+    "max_skills": {
+      "engineering_skill": {
+        "core": 1268,
+        "range_max": 448,
+        "range_min": 295
+      },
+      "security_skill": {
+        "core": 490,
+        "range_max": 200,
+        "range_min": 96
+      },
+      "science_skill": {
+        "core": 974,
+        "range_max": 435,
+        "range_min": 210
+      }
+    },
+    "name": "Leucon",
+    "url": "/wiki/Leucon"
+  },
+  {
+    "image": "crew/lt-ilia.png",
+    "key": "lt-ilia",
+    "max_rarity": 4,
+    "max_skills": {
+      "command_skill": {
+        "core": 664,
+        "range_max": 231,
+        "range_min": 106
+      },
+      "science_skill": {
+        "core": 864,
+        "range_max": 339,
+        "range_min": 156
+      }
+    },
+    "name": "Lt. Ilia",
+    "url": "/wiki/Lt._Ilia"
+  },
+  {
+    "image": "crew/mission-specialist-lefler.png",
+    "key": "mission-specialist-lefler",
+    "max_rarity": 4,
+    "max_skills": {
+      "diplomacy_skill": {
+        "core": 390,
+        "range_max": 145,
+        "range_min": 73
+      },
+      "engineering_skill": {
+        "core": 858,
+        "range_max": 214,
+        "range_min": 86
+      },
+      "science_skill": {
+        "core": 661,
+        "range_max": 192,
+        "range_min": 96
+      }
+    },
+    "name": "Mission Specialist Lefler",
+    "url": "/wiki/Mission_Specialist_Lefler"
+  },
+  {
+    "image": "crew/seamus.png",
+    "key": "seamus",
+    "max_rarity": 4,
+    "max_skills": {
+      "diplomacy_skill": {
+        "core": 579,
+        "range_max": 299,
+        "range_min": 148
+      },
+      "security_skill": {
+        "core": 872,
+        "range_max": 395,
+        "range_min": 171
+      }
+    },
+    "name": "Seamus",
+    "url": "/wiki/Seamus"
+  },
+  {
+    "image": "crew/tee-time-doctor.png",
+    "key": "tee-time-doctor",
+    "max_rarity": 4,
+    "max_skills": {
+      "diplomacy_skill": {
+        "core": 920,
+        "range_max": 387,
+        "range_min": 186
+      },
+      "security_skill": {
+        "core": 344,
+        "range_max": 158,
+        "range_min": 74
+      },
+      "medicine_skill": {
+        "core": 658,
+        "range_max": 176,
+        "range_min": 67
+      }
+    },
+    "name": "Tee Time Doctor",
+    "url": "/wiki/Tee_Time_Doctor"
   }
 ]
