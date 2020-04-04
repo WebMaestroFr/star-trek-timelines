@@ -170,16 +170,23 @@ const fetchAllCrew = (): Promise<DataCrew[]> =>
     .then(handleCategoryCrew)
     .then(async crewLinks => {
       const crew = CREW as DataCrew[];
-      const missingCrew = crewLinks.filter(
-        url => !crew.find(c => c.url === url)
-      );
-      for (const url of missingCrew) {
+      // const missingCrew = crewLinks.filter(
+      //   url => !crew.find(c => c.url === url)
+      // );
+      // for (const url of missingCrew) {
+      for (const url of crewLinks) {
         const Crew = await fetchWikiDom({ url }).then(
           crewDom => crewDom && handleCrew(crewDom, url),
           error => console.log("FETCH FAILED", error)
         );
         if (Crew) {
-          crew.push(Crew);
+          const crewIndex = crew.findIndex(c => c.key === Crew.key);
+          if (crewIndex !== -1) {
+            crew[crewIndex] = Crew;
+          } else {
+            crew.push(Crew);
+            crew.sort((a, b) => (a.key > b.key ? 1 : -1));
+          }
           fs.writeFile(jsonPath, JSON.stringify(crew, null, "\t"), error => {
             if (error) {
               console.log("WRITE FAILED", error);

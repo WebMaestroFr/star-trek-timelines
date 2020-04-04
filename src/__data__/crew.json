@@ -1,5 +1,29 @@
 [
   {
+    "image": "crew/1701-bashir.png",
+    "key": "1701-bashir",
+    "max_rarity": 4,
+    "max_skills": {
+      "security_skill": {
+        "core": 595,
+        "range_max": 240,
+        "range_min": 123
+      },
+      "science_skill": {
+        "core": 364,
+        "range_max": 135,
+        "range_min": 57
+      },
+      "medicine_skill": {
+        "core": 814,
+        "range_max": 316,
+        "range_min": 174
+      }
+    },
+    "name": "1701 Bashir",
+    "url": "/wiki/1701_Bashir"
+  },
+  {
     "image": "crew/1701-jadzia-dax.png",
     "key": "1701-jadzia-dax",
     "max_rarity": 4,
@@ -324,6 +348,30 @@
     },
     "name": "Admiral Owen Paris",
     "url": "/wiki/Admiral_Owen_Paris"
+  },
+  {
+    "image": "crew/admiral-patrick.png",
+    "key": "admiral-patrick",
+    "max_rarity": 5,
+    "max_skills": {
+      "command_skill": {
+        "core": 1238,
+        "range_max": 538,
+        "range_min": 273
+      },
+      "diplomacy_skill": {
+        "core": 495,
+        "range_max": 143,
+        "range_min": 76
+      },
+      "science_skill": {
+        "core": 1023,
+        "range_max": 239,
+        "range_min": 124
+      }
+    },
+    "name": "Admiral Patrick",
+    "url": "/wiki/Admiral_Patrick"
   },
   {
     "image": "crew/admiral-picard.png",
@@ -1787,25 +1835,6 @@
     "url": "/wiki/Away_Team_Saru"
   },
   {
-    "image": "crew/b-etor-duras.png",
-    "key": "b-etor-duras",
-    "max_rarity": 3,
-    "max_skills": {
-      "diplomacy_skill": {
-        "core": 444,
-        "range_max": 222,
-        "range_min": 64
-      },
-      "security_skill": {
-        "core": 227,
-        "range_max": 337,
-        "range_min": 151
-      }
-    },
-    "name": "B'Etor Duras",
-    "url": "/wiki/B%27Etor_Duras"
-  },
-  {
     "image": "crew/b-4.png",
     "key": "b-4",
     "max_rarity": 4,
@@ -1828,6 +1857,25 @@
     },
     "name": "B-4",
     "url": "/wiki/B-4"
+  },
+  {
+    "image": "crew/b-etor-duras.png",
+    "key": "b-etor-duras",
+    "max_rarity": 3,
+    "max_skills": {
+      "diplomacy_skill": {
+        "core": 444,
+        "range_max": 222,
+        "range_min": 64
+      },
+      "security_skill": {
+        "core": 227,
+        "range_max": 337,
+        "range_min": 151
+      }
+    },
+    "name": "B'Etor Duras",
+    "url": "/wiki/B%27Etor_Duras"
   },
   {
     "image": "crew/ba-ku-worf.png",
@@ -3702,18 +3750,28 @@
     "url": "/wiki/Claiborne_Chekov"
   },
   {
-    "image": "crew/cmo-bones-mccoy.png",
-    "key": "cmo-bones-mccoy",
-    "max_rarity": 1,
+    "image": "crew/claymore-scotty.png",
+    "key": "claymore-scotty",
+    "max_rarity": 5,
     "max_skills": {
-      "medicine_skill": {
-        "core": 213,
-        "range_max": 196,
-        "range_min": 48
+      "diplomacy_skill": {
+        "core": 516,
+        "range_max": 136,
+        "range_min": 72
+      },
+      "engineering_skill": {
+        "core": 1307,
+        "range_max": 387,
+        "range_min": 195
+      },
+      "security_skill": {
+        "core": 1006,
+        "range_max": 234,
+        "range_min": 106
       }
     },
-    "name": "CMO 'Bones' McCoy",
-    "url": "/wiki/CMO_%27Bones%27_McCoy"
+    "name": "Claymore Scotty",
+    "url": "/wiki/Claymore_Scotty"
   },
   {
     "image": "crew/cmo-bashir.png",
@@ -3733,6 +3791,20 @@
     },
     "name": "CMO Bashir",
     "url": "/wiki/CMO_Bashir"
+  },
+  {
+    "image": "crew/cmo-bones-mccoy.png",
+    "key": "cmo-bones-mccoy",
+    "max_rarity": 1,
+    "max_skills": {
+      "medicine_skill": {
+        "core": 213,
+        "range_max": 196,
+        "range_min": 48
+      }
+    },
+    "name": "CMO 'Bones' McCoy",
+    "url": "/wiki/CMO_%27Bones%27_McCoy"
   },
   {
     "image": "crew/cmo-crusher.png",
@@ -4763,6 +4835,30 @@
     "url": "/wiki/Constable_Odo"
   },
   {
+    "image": "crew/control-leland.png",
+    "key": "control-leland",
+    "max_rarity": 5,
+    "max_skills": {
+      "command_skill": {
+        "core": 1254,
+        "range_max": 394,
+        "range_min": 233
+      },
+      "diplomacy_skill": {
+        "core": 658,
+        "range_max": 86,
+        "range_min": 49
+      },
+      "security_skill": {
+        "core": 1067,
+        "range_max": 198,
+        "range_min": 103
+      }
+    },
+    "name": "Control Leland",
+    "url": "/wiki/Control_Leland"
+  },
+  {
     "image": "crew/convergence-day-quark.png",
     "key": "convergence-day-quark",
     "max_rarity": 5,
@@ -5334,8 +5430,8 @@
       },
       "science_skill": {
         "core": 567,
-        "range_max": 177,
-        "range_min": 69
+        "range_max": 157,
+        "range_min": 55
       }
     },
     "name": "Desert Archer",
@@ -5839,49 +5935,6 @@
     "url": "/wiki/Douglas_Pabst"
   },
   {
-    "image": "crew/dr-crusher.png",
-    "key": "dr-crusher",
-    "max_rarity": 4,
-    "max_skills": {
-      "command_skill": {
-        "core": 275,
-        "range_max": 110,
-        "range_min": 38
-      },
-      "security_skill": {
-        "core": 437,
-        "range_max": 201,
-        "range_min": 90
-      },
-      "medicine_skill": {
-        "core": 736,
-        "range_max": 300,
-        "range_min": 123
-      }
-    },
-    "name": "Dr Crusher",
-    "url": "/wiki/Dr_Crusher"
-  },
-  {
-    "image": "crew/dr-phlox.png",
-    "key": "dr-phlox",
-    "max_rarity": 2,
-    "max_skills": {
-      "science_skill": {
-        "core": 256,
-        "range_max": 89,
-        "range_min": 24
-      },
-      "medicine_skill": {
-        "core": 298,
-        "range_max": 183,
-        "range_min": 48
-      }
-    },
-    "name": "Dr Phlox",
-    "url": "/wiki/Dr_Phlox"
-  },
-  {
     "image": "crew/dr-bones-mccoy.png",
     "key": "dr-bones-mccoy",
     "max_rarity": 5,
@@ -5913,6 +5966,30 @@
     },
     "name": "Dr. Carol Marcus",
     "url": "/wiki/Dr._Carol_Marcus"
+  },
+  {
+    "image": "crew/dr-crusher.png",
+    "key": "dr-crusher",
+    "max_rarity": 4,
+    "max_skills": {
+      "command_skill": {
+        "core": 275,
+        "range_max": 110,
+        "range_min": 38
+      },
+      "security_skill": {
+        "core": 437,
+        "range_max": 201,
+        "range_min": 90
+      },
+      "medicine_skill": {
+        "core": 736,
+        "range_max": 300,
+        "range_min": 123
+      }
+    },
+    "name": "Dr. Crusher",
+    "url": "/wiki/Dr._Crusher"
   },
   {
     "image": "crew/dr-david-marcus.png",
@@ -6042,6 +6119,25 @@
     },
     "name": "Dr. Leonard McCoy",
     "url": "/wiki/Dr._Leonard_McCoy"
+  },
+  {
+    "image": "crew/dr-phlox.png",
+    "key": "dr-phlox",
+    "max_rarity": 2,
+    "max_skills": {
+      "science_skill": {
+        "core": 256,
+        "range_max": 89,
+        "range_min": 24
+      },
+      "medicine_skill": {
+        "core": 298,
+        "range_max": 183,
+        "range_min": 48
+      }
+    },
+    "name": "Dr. Phlox",
+    "url": "/wiki/Dr._Phlox"
   },
   {
     "image": "crew/dr-pollard.png",
@@ -10242,6 +10338,30 @@
     "url": "/wiki/Leonardo_da_Vinci"
   },
   {
+    "image": "crew/leucon.png",
+    "key": "leucon",
+    "max_rarity": 5,
+    "max_skills": {
+      "engineering_skill": {
+        "core": 1268,
+        "range_max": 448,
+        "range_min": 295
+      },
+      "security_skill": {
+        "core": 490,
+        "range_max": 200,
+        "range_min": 96
+      },
+      "science_skill": {
+        "core": 974,
+        "range_max": 435,
+        "range_min": 210
+      }
+    },
+    "name": "Leucon",
+    "url": "/wiki/Leucon"
+  },
+  {
     "image": "crew/lewis-zimmerman.png",
     "key": "lewis-zimmerman",
     "max_rarity": 4,
@@ -10537,6 +10657,25 @@
     },
     "name": "Locutus of Borg",
     "url": "/wiki/Locutus_of_Borg"
+  },
+  {
+    "image": "crew/logician-solok.png",
+    "key": "logician-solok",
+    "max_rarity": 4,
+    "max_skills": {
+      "command_skill": {
+        "core": 903,
+        "range_max": 202,
+        "range_min": 88
+      },
+      "science_skill": {
+        "core": 646,
+        "range_max": 180,
+        "range_min": 87
+      }
+    },
+    "name": "Logician Solok",
+    "url": "/wiki/Logician_Solok"
   },
   {
     "image": "crew/loken.png",
@@ -10891,6 +11030,25 @@
     },
     "name": "Lt. Commander Uhura",
     "url": "/wiki/Lt._Commander_Uhura"
+  },
+  {
+    "image": "crew/lt-ilia.png",
+    "key": "lt-ilia",
+    "max_rarity": 4,
+    "max_skills": {
+      "command_skill": {
+        "core": 664,
+        "range_max": 231,
+        "range_min": 106
+      },
+      "science_skill": {
+        "core": 864,
+        "range_max": 339,
+        "range_min": 156
+      }
+    },
+    "name": "Lt. Ilia",
+    "url": "/wiki/Lt._Ilia"
   },
   {
     "image": "crew/lt-jadzia-dax.png",
@@ -11695,30 +11853,6 @@
     "url": "/wiki/Miranda_Jones"
   },
   {
-    "image": "crew/mirror-smiley-o-brien.png",
-    "key": "mirror-smiley-o-brien",
-    "max_rarity": 3,
-    "max_skills": {
-      "command_skill": {
-        "core": 373,
-        "range_max": 77,
-        "range_min": 37
-      },
-      "engineering_skill": {
-        "core": 545,
-        "range_max": 102,
-        "range_min": 30
-      },
-      "security_skill": {
-        "core": 180,
-        "range_max": 84,
-        "range_min": 30
-      }
-    },
-    "name": "Mirror 'Smiley' O'Brien",
-    "url": "/wiki/Mirror_%27Smiley%27_O%27Brien"
-  },
-  {
     "image": "crew/mirror-archer.png",
     "key": "mirror-archer",
     "max_rarity": 4,
@@ -12136,6 +12270,25 @@
     "url": "/wiki/Mirror_Keiko"
   },
   {
+    "image": "crew/mirror-keyla-detmer.png",
+    "key": "mirror-keyla-detmer",
+    "max_rarity": 5,
+    "max_skills": {
+      "command_skill": {
+        "core": 1029,
+        "range_max": 348,
+        "range_min": 154
+      },
+      "security_skill": {
+        "core": 1308,
+        "range_max": 451,
+        "range_min": 222
+      }
+    },
+    "name": "Mirror Keyla Detmer",
+    "url": "/wiki/Mirror_Keyla_Detmer"
+  },
+  {
     "image": "crew/mirror-kirk.png",
     "key": "mirror-kirk",
     "max_rarity": 5,
@@ -12301,6 +12454,30 @@
     },
     "name": "Mirror Sisko",
     "url": "/wiki/Mirror_Sisko"
+  },
+  {
+    "image": "crew/mirror-smiley-o-brien.png",
+    "key": "mirror-smiley-o-brien",
+    "max_rarity": 3,
+    "max_skills": {
+      "command_skill": {
+        "core": 373,
+        "range_max": 77,
+        "range_min": 37
+      },
+      "engineering_skill": {
+        "core": 545,
+        "range_max": 102,
+        "range_min": 30
+      },
+      "security_skill": {
+        "core": 180,
+        "range_max": 84,
+        "range_min": 30
+      }
+    },
+    "name": "Mirror 'Smiley' O'Brien",
+    "url": "/wiki/Mirror_%27Smiley%27_O%27Brien"
   },
   {
     "image": "crew/mirror-spock.png",
@@ -12497,6 +12674,30 @@
     },
     "name": "Miss Q",
     "url": "/wiki/Miss_Q"
+  },
+  {
+    "image": "crew/mission-specialist-lefler.png",
+    "key": "mission-specialist-lefler",
+    "max_rarity": 4,
+    "max_skills": {
+      "diplomacy_skill": {
+        "core": 390,
+        "range_max": 145,
+        "range_min": 73
+      },
+      "engineering_skill": {
+        "core": 858,
+        "range_max": 214,
+        "range_min": 86
+      },
+      "science_skill": {
+        "core": 661,
+        "range_max": 192,
+        "range_min": 96
+      }
+    },
+    "name": "Mission Specialist Lefler",
+    "url": "/wiki/Mission_Specialist_Lefler"
   },
   {
     "image": "crew/mobile-doctor.png",
@@ -12724,6 +12925,30 @@
     "url": "/wiki/Mutated_Paris"
   },
   {
+    "image": "crew/mycelial-culber.png",
+    "key": "mycelial-culber",
+    "max_rarity": 5,
+    "max_skills": {
+      "command_skill": {
+        "core": 449,
+        "range_max": 303,
+        "range_min": 93
+      },
+      "science_skill": {
+        "core": 869,
+        "range_max": 423,
+        "range_min": 198
+      },
+      "medicine_skill": {
+        "core": 1291,
+        "range_max": 550,
+        "range_min": 237
+      }
+    },
+    "name": "Mycelial Culber",
+    "url": "/wiki/Mycelial_Culber"
+  },
+  {
     "image": "crew/natima-lang.png",
     "key": "natima-lang",
     "max_rarity": 5,
@@ -12890,6 +13115,30 @@
     },
     "name": "Nexus Kirk",
     "url": "/wiki/Nexus_Kirk"
+  },
+  {
+    "image": "crew/niners-ezri.png",
+    "key": "niners-ezri",
+    "max_rarity": 5,
+    "max_skills": {
+      "diplomacy_skill": {
+        "core": 954,
+        "range_max": 314,
+        "range_min": 162
+      },
+      "security_skill": {
+        "core": 1294,
+        "range_max": 477,
+        "range_min": 249
+      },
+      "medicine_skill": {
+        "core": 566,
+        "range_max": 168,
+        "range_min": 65
+      }
+    },
+    "name": "Niners Ezri",
+    "url": "/wiki/Niners_Ezri"
   },
   {
     "image": "crew/niners-kira-nerys.png",
@@ -13526,6 +13775,30 @@
     },
     "name": "Picard and Number One",
     "url": "/wiki/Picard_and_Number_One"
+  },
+  {
+    "image": "crew/picard-at-el-adrel.png",
+    "key": "picard-at-el-adrel",
+    "max_rarity": 3,
+    "max_skills": {
+      "diplomacy_skill": {
+        "core": 571,
+        "range_max": 167,
+        "range_min": 71
+      },
+      "security_skill": {
+        "core": 215,
+        "range_max": 100,
+        "range_min": 38
+      },
+      "medicine_skill": {
+        "core": 335,
+        "range_max": 178,
+        "range_min": 62
+      }
+    },
+    "name": "Picard at El-Adrel",
+    "url": "/wiki/Picard_at_El-Adrel"
   },
   {
     "image": "crew/pining-vina.png",
@@ -14385,6 +14658,30 @@
     "url": "/wiki/Reinforcements_Stamets"
   },
   {
+    "image": "crew/relaxed-number-one.png",
+    "key": "relaxed-number-one",
+    "max_rarity": 4,
+    "max_skills": {
+      "command_skill": {
+        "core": 339,
+        "range_max": 129,
+        "range_min": 52
+      },
+      "diplomacy_skill": {
+        "core": 914,
+        "range_max": 356,
+        "range_min": 136
+      },
+      "science_skill": {
+        "core": 673,
+        "range_max": 166,
+        "range_min": 73
+      }
+    },
+    "name": "Relaxed Number One",
+    "url": "/wiki/Relaxed_Number_One"
+  },
+  {
     "image": "crew/rescue-team-uhura.png",
     "key": "rescue-team-uhura",
     "max_rarity": 5,
@@ -14677,6 +14974,30 @@
     "url": "/wiki/Rigel_VII_Vina"
   },
   {
+    "image": "crew/riker-odan.png",
+    "key": "riker-odan",
+    "max_rarity": 5,
+    "max_skills": {
+      "command_skill": {
+        "core": 510,
+        "range_max": 190,
+        "range_min": 88
+      },
+      "diplomacy_skill": {
+        "core": 998,
+        "range_max": 252,
+        "range_min": 92
+      },
+      "science_skill": {
+        "core": 1290,
+        "range_max": 408,
+        "range_min": 189
+      }
+    },
+    "name": "Riker Odan",
+    "url": "/wiki/Riker_Odan"
+  },
+  {
     "image": "crew/riker-q.png",
     "key": "riker-q",
     "max_rarity": 4,
@@ -14742,6 +15063,25 @@
     },
     "name": "Ripper",
     "url": "/wiki/Ripper"
+  },
+  {
+    "image": "crew/riva.png",
+    "key": "riva",
+    "max_rarity": 4,
+    "max_skills": {
+      "diplomacy_skill": {
+        "core": 954,
+        "range_max": 198,
+        "range_min": 73
+      },
+      "science_skill": {
+        "core": 687,
+        "range_max": 134,
+        "range_min": 59
+      }
+    },
+    "name": "Riva",
+    "url": "/wiki/Riva"
   },
   {
     "image": "crew/robin-hood.png",
@@ -15293,6 +15633,25 @@
     },
     "name": "Scrooge Data",
     "url": "/wiki/Scrooge_Data"
+  },
+  {
+    "image": "crew/seamus.png",
+    "key": "seamus",
+    "max_rarity": 4,
+    "max_skills": {
+      "diplomacy_skill": {
+        "core": 579,
+        "range_max": 299,
+        "range_min": 148
+      },
+      "security_skill": {
+        "core": 872,
+        "range_max": 395,
+        "range_min": 171
+      }
+    },
+    "name": "Seamus",
+    "url": "/wiki/Seamus"
   },
   {
     "image": "crew/section-31-philippa-georgiou.png",
@@ -16417,6 +16776,30 @@
     },
     "name": "Technician Rom",
     "url": "/wiki/Technician_Rom"
+  },
+  {
+    "image": "crew/tee-time-doctor.png",
+    "key": "tee-time-doctor",
+    "max_rarity": 4,
+    "max_skills": {
+      "diplomacy_skill": {
+        "core": 920,
+        "range_max": 387,
+        "range_min": 186
+      },
+      "security_skill": {
+        "core": 344,
+        "range_max": 158,
+        "range_min": 74
+      },
+      "medicine_skill": {
+        "core": 658,
+        "range_max": 176,
+        "range_min": 67
+      }
+    },
+    "name": "Tee Time Doctor",
+    "url": "/wiki/Tee_Time_Doctor"
   },
   {
     "image": "crew/teenager-nog.png",
@@ -18429,30 +18812,6 @@
     "url": "/wiki/Writer_Jake_Sisko"
   },
   {
-    "image": "crew/xindi-prisoner-archer.png",
-    "key": "xindi-prisoner-archer",
-    "max_rarity": 4,
-    "max_skills": {
-      "command_skill": {
-        "core": 406,
-        "range_max": 344,
-        "range_min": 161
-      },
-      "diplomacy_skill": {
-        "core": 842,
-        "range_max": 229,
-        "range_min": 112
-      },
-      "security_skill": {
-        "core": 367,
-        "range_max": 157,
-        "range_min": 79
-      }
-    },
-    "name": "Xindi 'Prisoner' Archer",
-    "url": "/wiki/Xindi_%27Prisoner%27_Archer"
-  },
-  {
     "image": "crew/xindi-insectoid-councilor.png",
     "key": "xindi-insectoid-councilor",
     "max_rarity": 5,
@@ -18475,6 +18834,30 @@
     },
     "name": "Xindi Insectoid Councilor",
     "url": "/wiki/Xindi_Insectoid_Councilor"
+  },
+  {
+    "image": "crew/xindi-prisoner-archer.png",
+    "key": "xindi-prisoner-archer",
+    "max_rarity": 4,
+    "max_skills": {
+      "command_skill": {
+        "core": 406,
+        "range_max": 344,
+        "range_min": 161
+      },
+      "diplomacy_skill": {
+        "core": 842,
+        "range_max": 229,
+        "range_min": 112
+      },
+      "security_skill": {
+        "core": 367,
+        "range_max": 157,
+        "range_min": 79
+      }
+    },
+    "name": "Xindi 'Prisoner' Archer",
+    "url": "/wiki/Xindi_%27Prisoner%27_Archer"
   },
   {
     "image": "crew/yarnek.png",
@@ -18676,283 +19059,5 @@
     },
     "name": "Zora",
     "url": "/wiki/Zora"
-  },
-  {
-    "image": "crew/1701-bashir.png",
-    "key": "1701-bashir",
-    "max_rarity": 4,
-    "max_skills": {
-      "security_skill": {
-        "core": 595,
-        "range_max": 240,
-        "range_min": 123
-      },
-      "science_skill": {
-        "core": 364,
-        "range_max": 135,
-        "range_min": 57
-      },
-      "medicine_skill": {
-        "core": 814,
-        "range_max": 316,
-        "range_min": 174
-      }
-    },
-    "name": "1701 Bashir",
-    "url": "/wiki/1701_Bashir"
-  },
-  {
-    "image": "crew/mycelial-culber.png",
-    "key": "mycelial-culber",
-    "max_rarity": 5,
-    "max_skills": {
-      "command_skill": {
-        "core": 449,
-        "range_max": 303,
-        "range_min": 93
-      },
-      "science_skill": {
-        "core": 869,
-        "range_max": 423,
-        "range_min": 198
-      },
-      "medicine_skill": {
-        "core": 1291,
-        "range_max": 550,
-        "range_min": 237
-      }
-    },
-    "name": "Mycelial Culber",
-    "url": "/wiki/Mycelial_Culber"
-  },
-  {
-    "image": "crew/relaxed-number-one.png",
-    "key": "relaxed-number-one",
-    "max_rarity": 4,
-    "max_skills": {
-      "command_skill": {
-        "core": 339,
-        "range_max": 129,
-        "range_min": 52
-      },
-      "diplomacy_skill": {
-        "core": 914,
-        "range_max": 356,
-        "range_min": 136
-      },
-      "science_skill": {
-        "core": 673,
-        "range_max": 166,
-        "range_min": 73
-      }
-    },
-    "name": "Relaxed Number One",
-    "url": "/wiki/Relaxed_Number_One"
-  },
-  {
-    "image": "crew/riker-odan.png",
-    "key": "riker-odan",
-    "max_rarity": 5,
-    "max_skills": {
-      "command_skill": {
-        "core": 510,
-        "range_max": 190,
-        "range_min": 88
-      },
-      "diplomacy_skill": {
-        "core": 998,
-        "range_max": 252,
-        "range_min": 92
-      },
-      "science_skill": {
-        "core": 1290,
-        "range_max": 408,
-        "range_min": 189
-      }
-    },
-    "name": "Riker Odan",
-    "url": "/wiki/Riker_Odan"
-  },
-  {
-    "image": "crew/admiral-patrick.png",
-    "key": "admiral-patrick",
-    "max_rarity": 5,
-    "max_skills": {
-      "command_skill": {
-        "core": 1238,
-        "range_max": 538,
-        "range_min": 273
-      },
-      "diplomacy_skill": {
-        "core": 495,
-        "range_max": 143,
-        "range_min": 76
-      },
-      "science_skill": {
-        "core": 1023,
-        "range_max": 239,
-        "range_min": 124
-      }
-    },
-    "name": "Admiral Patrick",
-    "url": "/wiki/Admiral_Patrick"
-  },
-  {
-    "image": "crew/claymore-scotty.png",
-    "key": "claymore-scotty",
-    "max_rarity": 5,
-    "max_skills": {
-      "diplomacy_skill": {
-        "core": 516,
-        "range_max": 136,
-        "range_min": 72
-      },
-      "engineering_skill": {
-        "core": 1307,
-        "range_max": 387,
-        "range_min": 195
-      },
-      "security_skill": {
-        "core": 1006,
-        "range_max": 234,
-        "range_min": 106
-      }
-    },
-    "name": "Claymore Scotty",
-    "url": "/wiki/Claymore_Scotty"
-  },
-  {
-    "image": "crew/control-leland.png",
-    "key": "control-leland",
-    "max_rarity": 5,
-    "max_skills": {
-      "command_skill": {
-        "core": 1254,
-        "range_max": 394,
-        "range_min": 233
-      },
-      "diplomacy_skill": {
-        "core": 658,
-        "range_max": 86,
-        "range_min": 49
-      },
-      "security_skill": {
-        "core": 1067,
-        "range_max": 198,
-        "range_min": 103
-      }
-    },
-    "name": "Control Leland",
-    "url": "/wiki/Control_Leland"
-  },
-  {
-    "image": "crew/leucon.png",
-    "key": "leucon",
-    "max_rarity": 5,
-    "max_skills": {
-      "engineering_skill": {
-        "core": 1268,
-        "range_max": 448,
-        "range_min": 295
-      },
-      "security_skill": {
-        "core": 490,
-        "range_max": 200,
-        "range_min": 96
-      },
-      "science_skill": {
-        "core": 974,
-        "range_max": 435,
-        "range_min": 210
-      }
-    },
-    "name": "Leucon",
-    "url": "/wiki/Leucon"
-  },
-  {
-    "image": "crew/lt-ilia.png",
-    "key": "lt-ilia",
-    "max_rarity": 4,
-    "max_skills": {
-      "command_skill": {
-        "core": 664,
-        "range_max": 231,
-        "range_min": 106
-      },
-      "science_skill": {
-        "core": 864,
-        "range_max": 339,
-        "range_min": 156
-      }
-    },
-    "name": "Lt. Ilia",
-    "url": "/wiki/Lt._Ilia"
-  },
-  {
-    "image": "crew/mission-specialist-lefler.png",
-    "key": "mission-specialist-lefler",
-    "max_rarity": 4,
-    "max_skills": {
-      "diplomacy_skill": {
-        "core": 390,
-        "range_max": 145,
-        "range_min": 73
-      },
-      "engineering_skill": {
-        "core": 858,
-        "range_max": 214,
-        "range_min": 86
-      },
-      "science_skill": {
-        "core": 661,
-        "range_max": 192,
-        "range_min": 96
-      }
-    },
-    "name": "Mission Specialist Lefler",
-    "url": "/wiki/Mission_Specialist_Lefler"
-  },
-  {
-    "image": "crew/seamus.png",
-    "key": "seamus",
-    "max_rarity": 4,
-    "max_skills": {
-      "diplomacy_skill": {
-        "core": 579,
-        "range_max": 299,
-        "range_min": 148
-      },
-      "security_skill": {
-        "core": 872,
-        "range_max": 395,
-        "range_min": 171
-      }
-    },
-    "name": "Seamus",
-    "url": "/wiki/Seamus"
-  },
-  {
-    "image": "crew/tee-time-doctor.png",
-    "key": "tee-time-doctor",
-    "max_rarity": 4,
-    "max_skills": {
-      "diplomacy_skill": {
-        "core": 920,
-        "range_max": 387,
-        "range_min": 186
-      },
-      "security_skill": {
-        "core": 344,
-        "range_max": 158,
-        "range_min": 74
-      },
-      "medicine_skill": {
-        "core": 658,
-        "range_max": 176,
-        "range_min": 67
-      }
-    },
-    "name": "Tee Time Doctor",
-    "url": "/wiki/Tee_Time_Doctor"
   }
 ]
