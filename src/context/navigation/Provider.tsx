@@ -13,6 +13,9 @@ const NavigationProvider: FC<{
   playerName: string | null;
 }> = ({ children, onClickImport, playerName }) => {
   const [filter, setFilter] = useState<string>(defaultNavigation.filter);
+  const [selectedRarities, setSelectedRarities] = useState<boolean[]>(
+    defaultNavigation.selectedRarities
+  );
   const handleChangeFilter = (
     event: ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
@@ -25,12 +28,25 @@ const NavigationProvider: FC<{
     setFilter(sanitizedValue);
     window.dispatchEvent(scrollEvent);
   };
+  const handleSelectRarity = (index: number) => () =>
+    setSelectedRarities(prev => {
+      prev[index] = !prev[index];
+      return [...prev];
+    });
 
   return (
-    <NavigationContext.Provider value={{ filter }}>
+    <NavigationContext.Provider value={{ filter, selectedRarities }}>
       <Navbar bg="dark" className="Navigation" expand="lg" variant="dark">
         <Form inline={true}>
           <FormDebounce onChange={handleChangeFilter} placeholder="Filter..." />
+          {selectedRarities.map((selected, index) => (
+            <Icon
+              className={selected ? "active" : "inactive"}
+              key={index}
+              name="star"
+              onClick={handleSelectRarity(index)}
+            />
+          ))}
         </Form>
         <Navbar.Brand className="ml-auto">
           {playerName || (

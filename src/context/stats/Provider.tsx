@@ -3,6 +3,7 @@ import React, { FC, useEffect, useState } from "react";
 import { fromEntries } from "../../utils";
 import { sanitizeFilename } from "../../utils";
 import CREW from "../../__data__/crew.json";
+import useNavigation from "../navigation";
 import usePlayer from "../player";
 import { StatsContext } from "./index";
 
@@ -43,9 +44,11 @@ const getSkillsSum = (skills: Skills) =>
 
 const StatsProvider: FC = ({ children }) => {
   const PLAYER = usePlayer();
+  const { selectedRarities } = useNavigation();
   const [stats, setStats] = useState<Stats | null>(null);
+  const filteredCrew = CREW.filter(c => selectedRarities[c.max_rarity - 1]);
   useEffect(() => {
-    const bestCrew = CREW.reduce(getBestCrew, {});
+    const bestCrew = filteredCrew.reduce(getBestCrew, {});
     const playerBestCrew = PLAYER
       ? PLAYER.player.character.crew.reduce(getPlayerBestCrew, {})
       : {};
@@ -83,35 +86,38 @@ const StatsProvider: FC = ({ children }) => {
     setStats({
       bestCrew,
       bestSkills,
-      crew: CREW.map(crew => {
-        const diffSkills = Object.entries(crew.max_skills).reduce<DiffSkills>(
-          toDiffSkills,
-          {} as DiffSkills
-        );
-        const diffSkillsValues = Object.values(diffSkills);
-        const diffSkillsAvg =
-          diffSkillsValues.reduce<number>((sum, diff) => sum + diff, 0) /
-          diffSkillsValues.length;
-        const active = PLAYER
-          ? PLAYER.player.character.crew.find(
-              ({ name }) => sanitizeFilename(name) === crew.key
-            )
-          : null;
-        const currentSkillsSum = active ? getSkillsSum(active.base_skills) : 0;
-        const maxSkillsSum = getSkillsSum(crew.max_skills);
-        const skillsProgress = currentSkillsSum
-          ? Math.min(currentSkillsSum / maxSkillsSum, 1)
-          : 0;
-        return {
-          ...crew,
-          active,
-          currentSkillsSum,
-          diffSkills,
-          diffSkillsAvg,
-          maxSkillsSum,
-          skillsProgress
-        };
-      })
+      crew: filteredCrew
+        .map(crew => {
+          const diffSkills = Object.entries(crew.max_skills).reduce<DiffSkills>(
+            toDiffSkills,
+            {} as DiffSkills
+          );
+          const diffSkillsValues = Object.values(diffSkills);
+          const diffSkillsAvg =
+            diffSkillsValues.reduce<number>((sum, diff) => sum + diff, 0) /
+            diffSkillsValues.length;
+          const active = PLAYER
+            ? PLAYER.player.character.crew.find(
+                ({ name }) => sanitizeFilename(name) === crew.key
+              )
+            : null;
+          const currentSkillsSum = active
+            ? getSkillsSum(active.base_skills)
+            : 0;
+          const maxSkillsSum = getSkillsSum(crew.max_skills);
+          const skillsProgress = currentSkillsSum
+            ? Math.min(currentSkillsSum / maxSkillsSum, 1)
+            : 0;
+          return {
+            ...crew,
+            active,
+            currentSkillsSum,
+            diffSkills,
+            diffSkillsAvg,
+            maxSkillsSum,
+            skillsProgress
+          };
+        })
         .sort((a, b) => {
           const aComplete = a.active
             ? Math.pow(a.skillsProgress, 1 + a.max_rarity - a.active.rarity)
@@ -132,7 +138,7 @@ const StatsProvider: FC = ({ children }) => {
       playerBestCrew,
       playerBestSkills
     });
-  }, [PLAYER]);
+  }, [PLAYER, filteredCrew]);
   return (
     <StatsContext.Provider value={stats}>{children}</StatsContext.Provider>
   );
